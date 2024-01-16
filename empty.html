@@ -1,0 +1,41 @@
+<html>
+    <style>
+        .content {
+            background-color: black;
+            padding-top: 10px;
+            padding-bottom: 30px;
+            padding-left: 7px;
+            color:white;
+        }
+        .go {
+            background-color: rgb(21, 163, 21);
+            display: inline-block;
+            padding: 8px 20px;
+            margin-right: 1000px;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .go:hover {
+            background-color: rgb(19, 138, 19);
+        }
+    </style>
+    <body>
+        <div class="content">
+            <h3>No input sequence found</h3>
+        </div>
+        <br>
+        <div class="go-back">
+        <a href="#" onclick="goback()" class="go">Go back</a>
+        </div>
+        <script>
+            function goback() {
+                window.history.back();
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Home</title>
+    <style>
+        .index {
+            font-size: x-large;
+            background-color: rgb(49, 48, 48);
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .anchor {
+            padding: 12px 20px;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+        }
+
+        .index a:hover {
+            background-color: rgb(0, 0, 0);
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        .back {
+            background-image: url("{{url_for('static', filename='p5.jpg')}}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .index .dimg {
+            float: right;
+            width: 76px;
+            height: 50px;
+            border-radius: 5px;
+        }
+
+        .footer-css {
+            text-align: center;
+            background-color: rgb(37, 37, 72);
+            font-size: small;
+            color: azure;
+            padding: 4px;
+            margin: 0px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .anchor {
+            text-decoration: none;
+        }
+
+        .footer {
+            font-size: medium;
+            color: rgb(31, 31, 231);
+        }
+    </style>
+</head>
+<body>
+    <div class="index">
+        <a href="{{url_for('Home')}}" class="anchor"> Home </a>
+        <a href="{{url_for('pred')}}" class="anchor"> Prediction</a>
+        <a href="{{url_for('data')}}" class="anchor">Data</a>
+        <a href="{{url_for('phylo')}}" class="anchor">Phylogeny</a>
+        <img class="dimg" src="{{url_for('static',filename='dm.png')}}" alt="error loading">
+    </div>
+    <div class="back"></div>
+    <div class="footer-css">
+        <p><h3>No copyrights yet.</h3></p>
+        <a href="{{url_for('about')}}" class="footer">About us </a>
+    </div>
+</body>
+</html>
