@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Download</title>
+   <style>
+    body {
+        background-color: rgb(35, 46, 83);
+    }
+    h1{
+        color:white;
+    }
+    .files {
+        margin-right: 50px;
+        background-color: rgb(0, 0, 0);
+        padding-top: 8px;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding-left:15px;
+        font-size: large;
+    }
+   
+    a {
+        padding-left:10px;
+        text-decoration: none;
+        font-size:large;
+        color:rgb(14, 157, 204);
+    }
+    .white-icon {
+        color:white;
+    }
+   </style>  
+</head>
+<body>
+  <h1>Download Files</h1> 
+  <div class="files">
+  <ul>
+    <li><i class="fa fa-file white-icon" aria-hidden="true"></i><a href="{{ url_for('download', filename='rice var.csv') }}">Ricevar</a></li><br>
+    <li><i class="fa fa-file white-icon" aria-hidden="true"></i><a href="{{ url_for('download', filename='RiceVarMap2.csv') }}">Ricevar map</a></li><br>
+    <li><i class="fa fa-file white-icon" aria-hidden="true"></i><a href="{{ url_for('download', filename='datac.csv') }}">Data (clustered)</a></li><br>
+</ul>
+  </div>
+  <h3 style="color:white;">Click on the file to download.</h3> <br> 
+</body>
+</html>

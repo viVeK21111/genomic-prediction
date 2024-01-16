@@ -1,0 +1,47 @@
+<html>
+    <style>
+        .content {
+            background-color:rgb(11, 11, 11);;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 7px;
+            color:white;
+            
+        }
+        .go {
+            background-color: rgb(21, 163, 21);
+            display: inline-block;
+            padding: 8px 20px;
+            margin-right: 1000px;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .go:hover {
+            background-color: rgb(19, 138, 19);
+        }
+    
+    </style>
+    <body>
+        <div class="content">
+            <h3>Wrong input length</h3>
+        </div> 
+        <br><br>
+        <span>*Note:</span>
+        <span style="color:red;font-size: large;">We cuurently accept the sequences which are of only length 9.</span>
+        <br>
+        <br>
+        <div class="go-back">
+        <a href="#" onclick="goback()" class="go">Go back</a>
+        </div>
+        <script>
+            function goback() {
+                window.history.back();
+            }
+        </script>
+    </body>
+</html>
